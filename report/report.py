@@ -45,7 +45,10 @@ class Report():
 
 
 if __name__ == '__main__':
+    import logger.logger as logger
+    logger.init("starting logger")
     rp = Report()
+    logger.info("add section")
     rp.add_section('data frame')
     # create a dummy data frame for testing 
     import pandas as pd
